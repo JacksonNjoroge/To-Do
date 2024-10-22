@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily ToDo</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <h1 class="header">Daily ToDo</h1>
+
+            <div class="form-wrap">
+                <form id="form">
+                    <input type="text" id="form-input" placeholder="New Activity..." />
+                    <input type="submit" value="ADD" />
+                </form>
+            </div>
+
+            <div class="todo-content">
+                <!-- Doing Section -->
+                <div class="todo-section">
+                    <div class="heading">
+                        <h2>🏆 Doing</h2>
+                    </div>
+                    <ul id="todo-items" class="todo-items"></ul>
+                </div>
+
+                <!-- Done Section -->
+                <div class="todo-section">
+                    <div class="heading">
+                        <h2>✅ Done</h2>
+                    </div>
+                    <ul id="done" class="todo-items"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
